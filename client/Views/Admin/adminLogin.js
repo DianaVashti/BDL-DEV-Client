@@ -21,7 +21,7 @@ export default class AdminLogin extends React.Component {
   }
 
   handleSubmitButtonTap() {
-    axios.post('https://st-james-bdl-api.herokuapp.com/api/admins/login', {
+    axios.post('http://localhost:8080/api/admins/login', {
       email: this.refs.email.getValue(),
       password: this.refs.password.getValue()
     })

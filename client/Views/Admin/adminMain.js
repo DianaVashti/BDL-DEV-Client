@@ -40,7 +40,7 @@ export default class AdminMain extends Component {
       headers: { 'x-auth': jwt }
     }
 
-    axios.get('https://st-james-bdl-api.herokuapp.com/api/admins/reports', config)
+    axios.get('http://localhost:8080/api/admins/reports', config)
       .then((response) => {
         this.setState({
           reports: response.data,
@@ -91,7 +91,7 @@ export default class AdminMain extends Component {
 
   logOut() {
     axios.defaults.headers.common['x-auth'] = sessionStorage.getItem('auth')
-    axios.delete('https://st-james-bdl-api.herokuapp.com/api/admins/logout')
+    axios.delete('http://localhost:8080/api/admins/logout')
       .then(() => {
         browserHistory.push('/')
         sessionStorage.clear()
