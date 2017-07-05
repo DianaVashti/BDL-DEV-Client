@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-gmaps@^1.6.0",
+        "scope": null,
+        "escapedName": "react-gmaps",
+        "name": "react-gmaps",
+        "rawSpec": "^1.6.0",
+        "spec": ">=1.6.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/dianavashti/Documents/DiVDeV/SJI-BDL/sji-bdl-client"
+    ]
+  ],
+  "_from": "react-gmaps@>=1.6.0 <2.0.0",
+  "_id": "react-gmaps@1.6.0",
+  "_inCache": true,
+  "_location": "/react-gmaps",
+  "_nodeVersion": "7.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/react-gmaps-1.6.0.tgz_1494144687644_0.044556499691680074"
+  },
+  "_npmUser": {
+    "name": "michelebertoli",
+    "email": "michele@berto.li"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-gmaps@^1.6.0",
+    "scope": null,
+    "escapedName": "react-gmaps",
+    "name": "react-gmaps",
+    "rawSpec": "^1.6.0",
+    "spec": ">=1.6.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-gmaps/-/react-gmaps-1.6.0.tgz",
+  "_shasum": "ad96726f1519be2a5c825d6b3915a7d5c4f19600",
+  "_shrinkwrap": null,
+  "_spec": "react-gmaps@^1.6.0",
+  "_where": "/Users/dianavashti/Documents/DiVDeV/SJI-BDL/sji-bdl-client",
+  "author": {
+    "name": "Michele Bertoli"
+  },
+  "bugs": {
+    "url": "https://github.com/MicheleBertoli/react-gmaps/issues"
+  },
+  "dependencies": {
+    "create-react-class": "^15.5.2",
+    "object-assign": "^4.0.1"
+  },
+  "description": "A Google Maps component for React.js",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-eslint": "^4.0.5",
+    "babel-jest": "^5.3.0",
+    "babelify": "^5.0.4",
+    "browserify": "^8.1.3",
+    "eslint": "^1.1.0",
+    "eslint-plugin-react": "^3.2.1",
+    "express": "^4.11.2",
+    "jest-cli": "^12.0.0",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "ad96726f1519be2a5c825d6b3915a7d5c4f19600",
+    "tarball": "https://registry.npmjs.org/react-gmaps/-/react-gmaps-1.6.0.tgz"
+  },
+  "gitHead": "005f8b9e145c2239523f6317592bb64762a9d7b4",
+  "homepage": "https://github.com/MicheleBertoli/react-gmaps",
+  "jest": {
+    "testPathDirs": [
+      "./src"
+    ],
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/create-react-class",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  },
+  "keywords": [
+    "React.js",
+    "Google Maps",
+    "react-component"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "michelebertoli",
+      "email": "michele@berto.li"
+    }
+  ],
+  "name": "react-gmaps",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicheleBertoli/react-gmaps.git"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist --ignore __tests__",
+    "demo": "browserify -t babelify ./demo/index.js -o ./demo/build.js",
+    "prepublish": "npm run build",
+    "pretest": "eslint ./src",
+    "start": "node server",
+    "test": "jest"
+  },
+  "version": "1.6.0"
+}
