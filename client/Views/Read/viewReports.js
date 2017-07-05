@@ -29,7 +29,7 @@ export default class ViewReports extends Component {
   }
 
   componentDidMount(){
-    axios.get('https://st-james-bdl-api.herokuapp.com/api/reports')
+    axios.get('http://localhost:8080/api/reports')
       .then(reports => {
         this.setState({
           reports: reports.data,
@@ -42,7 +42,7 @@ export default class ViewReports extends Component {
   }
 
   createSearchQuery(terms) {
-    let queryString = 'https://st-james-bdl-api.herokuapp.com/api/reports/search?keywords='
+    let queryString = 'http://localhost:8080/api/reports/search?keywords='
     // could probably refactor this
     for (let i = 0; i < terms.length; i++) {
       if (i !== (terms.length - 1)) {
